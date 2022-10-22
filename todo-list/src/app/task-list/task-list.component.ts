@@ -8,6 +8,7 @@ import { ActivatedRoute, Route } from '@angular/router';
 export class TaskListComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
+  newTaskTitle: string = '';
   date: Date = new Date();
   ngOnInit(): void {
     this.date = new Date(this.route.snapshot.params['date']);
@@ -20,8 +21,9 @@ export class TaskListComponent implements OnInit {
     new Task('Shop for the party'),
   ];
 
-  add(newTask: string) {
-    this.tasks.push(new Task(newTask));
+  add() {
+    this.tasks.push(new Task(this.newTaskTitle));
+    this.newTaskTitle = '';
   }
 
   remove(existingTask: Task) {

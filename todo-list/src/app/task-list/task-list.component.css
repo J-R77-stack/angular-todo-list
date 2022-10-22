@@ -101,3 +101,7 @@ td {
 .is-done {
   text-decoration: line-through;
 }
+
+p {
+  line-height: 50px;
+}

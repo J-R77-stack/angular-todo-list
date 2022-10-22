@@ -105,3 +105,8 @@ td {
 p {
   line-height: 50px;
 }
+
+.validation-error {
+  color: rgb(209, 15, 15);
+  margin-bottom: 10px;
+}

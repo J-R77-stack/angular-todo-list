@@ -57,6 +57,11 @@ button {
   height: 100%;
 }
 
+button:disabled {
+  background-color: grey;
+  cursor: default;
+}
+
 .done-button {
   background-color: #242424;
   color: #ffffff;

@@ -8,4 +8,4 @@ import { FormsModule } from '@angular/forms';
   imports: [CommonModule, MatDatepickerModule, FormsModule],
   exports: [TaskListComponent],
 })
-export class TaskListModule {}
+export class TasksModule {}
